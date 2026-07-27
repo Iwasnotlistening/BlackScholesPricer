@@ -63,11 +63,15 @@ CMAKE_BINARY_DIR = /Users/arnav/repos/cpp_projects/BlackScholesPricer/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all:
+all: CMakeFiles/bs_lib.dir/all
+all: CMakeFiles/black_scholes.dir/all
+all: CMakeFiles/run_tests.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
-codegen:
+codegen: CMakeFiles/bs_lib.dir/codegen
+codegen: CMakeFiles/black_scholes.dir/codegen
+codegen: CMakeFiles/run_tests.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -75,8 +79,106 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean:
+clean: CMakeFiles/bs_lib.dir/clean
+clean: CMakeFiles/black_scholes.dir/clean
+clean: CMakeFiles/run_tests.dir/clean
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/bs_lib.dir
+
+# All Build rule for target.
+CMakeFiles/bs_lib.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bs_lib.dir/build.make CMakeFiles/bs_lib.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bs_lib.dir/build.make CMakeFiles/bs_lib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/arnav/repos/cpp_projects/BlackScholesPricer/build/CMakeFiles --progress-num=3,4,5,6 "Built target bs_lib"
+.PHONY : CMakeFiles/bs_lib.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/bs_lib.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/arnav/repos/cpp_projects/BlackScholesPricer/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/bs_lib.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/arnav/repos/cpp_projects/BlackScholesPricer/build/CMakeFiles 0
+.PHONY : CMakeFiles/bs_lib.dir/rule
+
+# Convenience name for target.
+bs_lib: CMakeFiles/bs_lib.dir/rule
+.PHONY : bs_lib
+
+# codegen rule for target.
+CMakeFiles/bs_lib.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bs_lib.dir/build.make CMakeFiles/bs_lib.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/arnav/repos/cpp_projects/BlackScholesPricer/build/CMakeFiles --progress-num=3,4,5,6 "Finished codegen for target bs_lib"
+.PHONY : CMakeFiles/bs_lib.dir/codegen
+
+# clean rule for target.
+CMakeFiles/bs_lib.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bs_lib.dir/build.make CMakeFiles/bs_lib.dir/clean
+.PHONY : CMakeFiles/bs_lib.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/black_scholes.dir
+
+# All Build rule for target.
+CMakeFiles/black_scholes.dir/all: CMakeFiles/bs_lib.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/black_scholes.dir/build.make CMakeFiles/black_scholes.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/black_scholes.dir/build.make CMakeFiles/black_scholes.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/arnav/repos/cpp_projects/BlackScholesPricer/build/CMakeFiles --progress-num=1,2 "Built target black_scholes"
+.PHONY : CMakeFiles/black_scholes.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/black_scholes.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/arnav/repos/cpp_projects/BlackScholesPricer/build/CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/black_scholes.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/arnav/repos/cpp_projects/BlackScholesPricer/build/CMakeFiles 0
+.PHONY : CMakeFiles/black_scholes.dir/rule
+
+# Convenience name for target.
+black_scholes: CMakeFiles/black_scholes.dir/rule
+.PHONY : black_scholes
+
+# codegen rule for target.
+CMakeFiles/black_scholes.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/black_scholes.dir/build.make CMakeFiles/black_scholes.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/arnav/repos/cpp_projects/BlackScholesPricer/build/CMakeFiles --progress-num=1,2 "Finished codegen for target black_scholes"
+.PHONY : CMakeFiles/black_scholes.dir/codegen
+
+# clean rule for target.
+CMakeFiles/black_scholes.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/black_scholes.dir/build.make CMakeFiles/black_scholes.dir/clean
+.PHONY : CMakeFiles/black_scholes.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/run_tests.dir
+
+# All Build rule for target.
+CMakeFiles/run_tests.dir/all: CMakeFiles/bs_lib.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/arnav/repos/cpp_projects/BlackScholesPricer/build/CMakeFiles --progress-num=7,8 "Built target run_tests"
+.PHONY : CMakeFiles/run_tests.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/run_tests.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/arnav/repos/cpp_projects/BlackScholesPricer/build/CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/run_tests.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/arnav/repos/cpp_projects/BlackScholesPricer/build/CMakeFiles 0
+.PHONY : CMakeFiles/run_tests.dir/rule
+
+# Convenience name for target.
+run_tests: CMakeFiles/run_tests.dir/rule
+.PHONY : run_tests
+
+# codegen rule for target.
+CMakeFiles/run_tests.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/arnav/repos/cpp_projects/BlackScholesPricer/build/CMakeFiles --progress-num=7,8 "Finished codegen for target run_tests"
+.PHONY : CMakeFiles/run_tests.dir/codegen
+
+# clean rule for target.
+CMakeFiles/run_tests.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/clean
+.PHONY : CMakeFiles/run_tests.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

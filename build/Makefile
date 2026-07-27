@@ -116,6 +116,165 @@ depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+#=============================================================================
+# Target rules for targets named bs_lib
+
+# Build rule for target.
+bs_lib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bs_lib
+.PHONY : bs_lib
+
+# fast build rule for target.
+bs_lib/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bs_lib.dir/build.make CMakeFiles/bs_lib.dir/build
+.PHONY : bs_lib/fast
+
+#=============================================================================
+# Target rules for targets named black_scholes
+
+# Build rule for target.
+black_scholes: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 black_scholes
+.PHONY : black_scholes
+
+# fast build rule for target.
+black_scholes/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/black_scholes.dir/build.make CMakeFiles/black_scholes.dir/build
+.PHONY : black_scholes/fast
+
+#=============================================================================
+# Target rules for targets named run_tests
+
+# Build rule for target.
+run_tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 run_tests
+.PHONY : run_tests
+
+# fast build rule for target.
+run_tests/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/build
+.PHONY : run_tests/fast
+
+main.o: main.cpp.o
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/black_scholes.dir/build.make CMakeFiles/black_scholes.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/black_scholes.dir/build.make CMakeFiles/black_scholes.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/black_scholes.dir/build.make CMakeFiles/black_scholes.dir/main.cpp.s
+.PHONY : main.cpp.s
+
+src/greeks.o: src/greeks.cpp.o
+.PHONY : src/greeks.o
+
+# target to build an object file
+src/greeks.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bs_lib.dir/build.make CMakeFiles/bs_lib.dir/src/greeks.cpp.o
+.PHONY : src/greeks.cpp.o
+
+src/greeks.i: src/greeks.cpp.i
+.PHONY : src/greeks.i
+
+# target to preprocess a source file
+src/greeks.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bs_lib.dir/build.make CMakeFiles/bs_lib.dir/src/greeks.cpp.i
+.PHONY : src/greeks.cpp.i
+
+src/greeks.s: src/greeks.cpp.s
+.PHONY : src/greeks.s
+
+# target to generate assembly for a file
+src/greeks.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bs_lib.dir/build.make CMakeFiles/bs_lib.dir/src/greeks.cpp.s
+.PHONY : src/greeks.cpp.s
+
+src/implied_vol.o: src/implied_vol.cpp.o
+.PHONY : src/implied_vol.o
+
+# target to build an object file
+src/implied_vol.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bs_lib.dir/build.make CMakeFiles/bs_lib.dir/src/implied_vol.cpp.o
+.PHONY : src/implied_vol.cpp.o
+
+src/implied_vol.i: src/implied_vol.cpp.i
+.PHONY : src/implied_vol.i
+
+# target to preprocess a source file
+src/implied_vol.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bs_lib.dir/build.make CMakeFiles/bs_lib.dir/src/implied_vol.cpp.i
+.PHONY : src/implied_vol.cpp.i
+
+src/implied_vol.s: src/implied_vol.cpp.s
+.PHONY : src/implied_vol.s
+
+# target to generate assembly for a file
+src/implied_vol.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bs_lib.dir/build.make CMakeFiles/bs_lib.dir/src/implied_vol.cpp.s
+.PHONY : src/implied_vol.cpp.s
+
+src/pricing.o: src/pricing.cpp.o
+.PHONY : src/pricing.o
+
+# target to build an object file
+src/pricing.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bs_lib.dir/build.make CMakeFiles/bs_lib.dir/src/pricing.cpp.o
+.PHONY : src/pricing.cpp.o
+
+src/pricing.i: src/pricing.cpp.i
+.PHONY : src/pricing.i
+
+# target to preprocess a source file
+src/pricing.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bs_lib.dir/build.make CMakeFiles/bs_lib.dir/src/pricing.cpp.i
+.PHONY : src/pricing.cpp.i
+
+src/pricing.s: src/pricing.cpp.s
+.PHONY : src/pricing.s
+
+# target to generate assembly for a file
+src/pricing.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bs_lib.dir/build.make CMakeFiles/bs_lib.dir/src/pricing.cpp.s
+.PHONY : src/pricing.cpp.s
+
+tests/test_pricing.o: tests/test_pricing.cpp.o
+.PHONY : tests/test_pricing.o
+
+# target to build an object file
+tests/test_pricing.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/test_pricing.cpp.o
+.PHONY : tests/test_pricing.cpp.o
+
+tests/test_pricing.i: tests/test_pricing.cpp.i
+.PHONY : tests/test_pricing.i
+
+# target to preprocess a source file
+tests/test_pricing.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/test_pricing.cpp.i
+.PHONY : tests/test_pricing.cpp.i
+
+tests/test_pricing.s: tests/test_pricing.cpp.s
+.PHONY : tests/test_pricing.s
+
+# target to generate assembly for a file
+tests/test_pricing.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/tests/test_pricing.cpp.s
+.PHONY : tests/test_pricing.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -124,6 +283,24 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... black_scholes"
+	@echo "... bs_lib"
+	@echo "... run_tests"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
+	@echo "... src/greeks.o"
+	@echo "... src/greeks.i"
+	@echo "... src/greeks.s"
+	@echo "... src/implied_vol.o"
+	@echo "... src/implied_vol.i"
+	@echo "... src/implied_vol.s"
+	@echo "... src/pricing.o"
+	@echo "... src/pricing.i"
+	@echo "... src/pricing.s"
+	@echo "... tests/test_pricing.o"
+	@echo "... tests/test_pricing.i"
+	@echo "... tests/test_pricing.s"
 .PHONY : help
 
 

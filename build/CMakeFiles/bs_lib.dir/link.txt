@@ -1,0 +1,2 @@
+/usr/bin/ar qc libbs_lib.a CMakeFiles/bs_lib.dir/src/greeks.cpp.o CMakeFiles/bs_lib.dir/src/implied_vol.cpp.o CMakeFiles/bs_lib.dir/src/pricing.cpp.o
+/usr/bin/ranlib libbs_lib.a

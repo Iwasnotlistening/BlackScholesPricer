@@ -1,0 +1,32 @@
+[
+{
+  "directory": "/Users/arnav/repos/cpp_projects/BlackScholesPricer/build",
+  "command": "/usr/bin/clang++  -I/Users/arnav/repos/cpp_projects/BlackScholesPricer/include -g -std=gnu++17 -arch arm64 -o CMakeFiles/bs_lib.dir/src/greeks.cpp.o -c /Users/arnav/repos/cpp_projects/BlackScholesPricer/src/greeks.cpp",
+  "file": "/Users/arnav/repos/cpp_projects/BlackScholesPricer/src/greeks.cpp",
+  "output": "CMakeFiles/bs_lib.dir/src/greeks.cpp.o"
+},
+{
+  "directory": "/Users/arnav/repos/cpp_projects/BlackScholesPricer/build",
+  "command": "/usr/bin/clang++  -I/Users/arnav/repos/cpp_projects/BlackScholesPricer/include -g -std=gnu++17 -arch arm64 -o CMakeFiles/bs_lib.dir/src/implied_vol.cpp.o -c /Users/arnav/repos/cpp_projects/BlackScholesPricer/src/implied_vol.cpp",
+  "file": "/Users/arnav/repos/cpp_projects/BlackScholesPricer/src/implied_vol.cpp",
+  "output": "CMakeFiles/bs_lib.dir/src/implied_vol.cpp.o"
+},
+{
+  "directory": "/Users/arnav/repos/cpp_projects/BlackScholesPricer/build",
+  "command": "/usr/bin/clang++  -I/Users/arnav/repos/cpp_projects/BlackScholesPricer/include -g -std=gnu++17 -arch arm64 -o CMakeFiles/bs_lib.dir/src/pricing.cpp.o -c /Users/arnav/repos/cpp_projects/BlackScholesPricer/src/pricing.cpp",
+  "file": "/Users/arnav/repos/cpp_projects/BlackScholesPricer/src/pricing.cpp",
+  "output": "CMakeFiles/bs_lib.dir/src/pricing.cpp.o"
+},
+{
+  "directory": "/Users/arnav/repos/cpp_projects/BlackScholesPricer/build",
+  "command": "/usr/bin/clang++  -I/Users/arnav/repos/cpp_projects/BlackScholesPricer/include -g -std=gnu++17 -arch arm64 -o CMakeFiles/black_scholes.dir/main.cpp.o -c /Users/arnav/repos/cpp_projects/BlackScholesPricer/main.cpp",
+  "file": "/Users/arnav/repos/cpp_projects/BlackScholesPricer/main.cpp",
+  "output": "CMakeFiles/black_scholes.dir/main.cpp.o"
+},
+{
+  "directory": "/Users/arnav/repos/cpp_projects/BlackScholesPricer/build",
+  "command": "/usr/bin/clang++  -I/Users/arnav/repos/cpp_projects/BlackScholesPricer/include -g -std=gnu++17 -arch arm64 -o CMakeFiles/run_tests.dir/tests/test_pricing.cpp.o -c /Users/arnav/repos/cpp_projects/BlackScholesPricer/tests/test_pricing.cpp",
+  "file": "/Users/arnav/repos/cpp_projects/BlackScholesPricer/tests/test_pricing.cpp",
+  "output": "CMakeFiles/run_tests.dir/tests/test_pricing.cpp.o"
+}
+]

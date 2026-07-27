@@ -1,2 +1,5 @@
+/Users/arnav/repos/cpp_projects/BlackScholesPricer/build/CMakeFiles/bs_lib.dir
+/Users/arnav/repos/cpp_projects/BlackScholesPricer/build/CMakeFiles/black_scholes.dir
+/Users/arnav/repos/cpp_projects/BlackScholesPricer/build/CMakeFiles/run_tests.dir
 /Users/arnav/repos/cpp_projects/BlackScholesPricer/build/CMakeFiles/edit_cache.dir
 /Users/arnav/repos/cpp_projects/BlackScholesPricer/build/CMakeFiles/rebuild_cache.dir
